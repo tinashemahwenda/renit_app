@@ -20,6 +20,7 @@ class RenitApp extends StatelessWidget {
       RenitColor.white = Colors.white;
       RenitColor.yellow = Color(0x00FFD200);
       return ShadApp(
+        debugShowCheckedModeBanner: false,
         home: HomePage(),
       );
     });
