@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/widgets/renit_job_card.dart';
 
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -42,54 +43,10 @@ class Home extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          ShadCard(
-            width: RenitSize.width,
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      spacing: 5,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          spacing: 12,
-                          children: [
-                            ShadBadge(
-                              backgroundColor: Colors.green.shade100,
-                              child: Text(
-                                '12 days left',
-                                style: TextStyle(
-                                  color: Colors.green,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        Text(
-                          'Senior Developer',
-                          style: ShadTheme.of(context).textTheme.h4,
-                        ),
-                        Text('MegaSoft Solutions'),
-                        Text('Harare, Zimbabwe'),
-                        SizedBox(height: 10),
-                        Row(
-                          spacing: 5,
-                          children: [
-                            ShadBadge.secondary(child: Text('Full Time')),
-                            ShadBadge(child: Text('High Salary'))
-                          ],
-                        ),
-                      ],
-                    ),
-                    Icon(FontAwesomeIcons.bookmark)
-                  ],
-                ),
-              ],
-            ),
+          RenitJobCard(
+            jobTitle: 'Graphic Designer',
+            companyName: 'Renit Group',
+            location: 'Harare, Zimbabwe',
           )
         ],
       ),
