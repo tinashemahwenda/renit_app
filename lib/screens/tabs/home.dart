@@ -49,6 +49,7 @@ class Home extends StatelessWidget {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Column(
                       spacing: 5,
@@ -72,14 +73,9 @@ class Home extends StatelessWidget {
                           'Senior Developer',
                           style: ShadTheme.of(context).textTheme.h4,
                         ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          spacing: 10,
-                          children: [
-                            Text('\$1K per month'),
-                            ShadBadge(child: Text('Full Time'))
-                          ],
-                        ),
+                        Text('MegaSoft Solutions'),
+                        Text('Harare, Zimbabwe'),
+                        ShadBadge.outline(child: Text('Full Time')),
                       ],
                     ),
                     Icon(FontAwesomeIcons.bookmark)
@@ -88,33 +84,6 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Row(
-                  children: [
-                    Row(
-                      spacing: 10,
-                      children: [
-                        ShadAvatar(
-                          'assets/images/renit-logo-white.png',
-                          size: Size.fromRadius(30),
-                          backgroundColor: Colors.black,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Renit Group',
-                              style: ShadTheme.of(context).textTheme.large,
-                            ),
-                            Text(
-                              'Harare, Zimbabwe',
-                              style: ShadTheme.of(context).textTheme.small,
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                  ],
-                )
               ],
             ),
           )
