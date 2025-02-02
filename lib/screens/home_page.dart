@@ -8,11 +8,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: RenitColor.yellow,
-      body: Center(
-        child: Text(
-          'Renit App',
-          style: ShadTheme.of(context).textTheme.h1Large,
+      backgroundColor: RenitColor.background,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Center(
+                child: Image.asset(
+                  'assets/images/renit-logo.png',
+                  width: 100,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
