@@ -81,9 +81,6 @@ class Home extends StatelessWidget {
                     Icon(FontAwesomeIcons.bookmark)
                   ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
               ],
             ),
           )
