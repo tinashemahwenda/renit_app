@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:renit_app/constants/constants.dart';
+
 import 'package:renit_app/widgets/renit_job_card.dart';
 
 import 'package:shadcn_ui/shadcn_ui.dart';
@@ -43,11 +43,38 @@ class Home extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          RenitJobCard(
-            jobTitle: 'Graphic Designer',
-            companyName: 'Renit Group',
-            location: 'Harare, Zimbabwe',
-          )
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: RenitJobCard(
+              jobTitle: 'Graphic Designer',
+              companyName: 'Renit Group',
+              location: 'Harare, Zimbabwe',
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: RenitJobCard(
+              jobTitle: 'Graphic Designer',
+              companyName: 'Renit Group',
+              location: 'Harare, Zimbabwe',
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: RenitJobCard(
+              jobTitle: 'Graphic Designer',
+              companyName: 'Renit Group',
+              location: 'Harare, Zimbabwe',
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: RenitJobCard(
+              jobTitle: 'Graphic Designer',
+              companyName: 'Renit Group',
+              location: 'Harare, Zimbabwe',
+            ),
+          ),
         ],
       ),
     );
