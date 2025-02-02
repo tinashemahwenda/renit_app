@@ -1,12 +1,77 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:renit_app/constants/constants.dart';
+
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [Text('Home Page')],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+            child: Image.asset(
+              'assets/images/renit-logo.png',
+              width: 100,
+            ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Container(
+            child: ShadInput(
+              padding: EdgeInsets.all(20),
+              placeholder: Text('Search for any job'),
+              decoration: ShadDecoration(
+                  border: ShadBorder.all(width: 1, color: Colors.black)),
+            ),
+          ),
+          SizedBox(height: 40),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Job Listings', style: ShadTheme.of(context).textTheme.h3),
+              Icon(FontAwesomeIcons.list)
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          ShadCard(
+            width: RenitSize.width,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  spacing: 5,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Senior Developer',
+                      style: ShadTheme.of(context).textTheme.h4,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      spacing: 10,
+                      children: [
+                        Text('\$1K per month'),
+                        ShadBadge(child: Text('Full Time'))
+                      ],
+                    )
+                  ],
+                ),
+                Icon(FontAwesomeIcons.bookmark)
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
