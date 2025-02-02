@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
-enum _SelectedTab{home, saved, search, profile}
+enum _SelectedTab { home, saved, search, profile }
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,14 +13,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   var _selectedTab = _SelectedTab.home;
 
-  void _handleIndexChange(int i){
+  void _handleIndexChange(int i) {
     setState(() {
       _selectedTab = _SelectedTab.values[i];
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +42,9 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: CrystalNavigationBar(
-        currentIndex: _SelectedTab.values.,
+        currentIndex: _SelectedTab.values.indexOf(_selectedTab),
+        height: 10,
+        onTap: _handleIndexChange,
       ),
     );
   }
