@@ -36,7 +36,7 @@ class RenitJobCard extends StatelessWidget {
                       ShadBadge(
                         backgroundColor: Colors.green.shade100,
                         child: Text(
-                          '12 days left',
+                          'Newly added',
                           style: TextStyle(
                             color: Colors.green,
                           ),
@@ -45,11 +45,11 @@ class RenitJobCard extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    'Senior Developer',
+                    jobTitle,
                     style: ShadTheme.of(context).textTheme.h4,
                   ),
-                  Text('MegaSoft Solutions'),
-                  Text('Harare, Zimbabwe'),
+                  Text(companyName),
+                  Text(location),
                   SizedBox(height: 10),
                   Row(
                     spacing: 5,
