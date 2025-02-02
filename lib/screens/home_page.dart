@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,6 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: RenitColor.yellow,
       body: Center(
         child: Text(
           'Renit App',
