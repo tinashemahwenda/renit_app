@@ -5,7 +5,15 @@ import 'package:shadcn_ui/shadcn_ui.dart';
 import '../constants/constants.dart';
 
 class RenitJobCard extends StatelessWidget {
-  const RenitJobCard({super.key});
+  final String jobTitle;
+  final String companyName;
+  final String location;
+  const RenitJobCard({
+    super.key,
+    required this.jobTitle,
+    required this.companyName,
+    required this.location,
+  });
 
   @override
   Widget build(BuildContext context) {
