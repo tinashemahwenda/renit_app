@@ -2,6 +2,7 @@ import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/screens/tabs/home.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 enum _SelectedTab { home, saved, search, profile }
@@ -22,25 +23,26 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  final List<Widget> _pages = [
+    Home(),
+    Center(
+      child: Text('Search'),
+    ),
+    Center(
+      child: Text('Saved'),
+    ),
+    Center(
+      child: Text('Settings'),
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: RenitColor.background,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Center(
-                child: Image.asset(
-                  'assets/images/renit-logo.png',
-                  width: 100,
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+            child: _pages[_SelectedTab.values.indexOf(_selectedTab)]),
       ),
       bottomNavigationBar: CrystalNavigationBar(
         currentIndex: _SelectedTab.values.indexOf(_selectedTab),
