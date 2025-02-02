@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/screens/tabs/home.dart';
-import 'package:shadcn_ui/shadcn_ui.dart';
 
 enum _SelectedTab { home, saved, search, profile }
 
