@@ -59,11 +59,11 @@ class Home extends StatelessWidget {
                           spacing: 12,
                           children: [
                             ShadBadge(
-                              backgroundColor: Colors.green.shade400,
+                              backgroundColor: Colors.green.shade100,
                               child: Text(
                                 '12 days left',
                                 style: TextStyle(
-                                  color: Colors.black,
+                                  color: Colors.green,
                                 ),
                               ),
                             ),
@@ -75,7 +75,14 @@ class Home extends StatelessWidget {
                         ),
                         Text('MegaSoft Solutions'),
                         Text('Harare, Zimbabwe'),
-                        ShadBadge.outline(child: Text('Full Time')),
+                        SizedBox(height: 10),
+                        Row(
+                          spacing: 5,
+                          children: [
+                            ShadBadge.secondary(child: Text('Full Time')),
+                            ShadBadge(child: Text('High Salary'))
+                          ],
+                        ),
                       ],
                     ),
                     Icon(FontAwesomeIcons.bookmark)
