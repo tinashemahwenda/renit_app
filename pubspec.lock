@@ -57,6 +57,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
+  crystal_navigation_bar:
+    dependency: "direct main"
+    description:
+      name: crystal_navigation_bar
+      sha256: c7a0b90bbffbde807ac01819f1ba113a302e86c2b4875cb26a14fd3fc3e91804
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -65,6 +73,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  dot_navigation_bar:
+    dependency: "direct main"
+    description:
+      name: dot_navigation_bar
+      sha256: "753e1d91644e39beddd0a4ed7e366f37a95e38cafb601c3b7496120ae0532f63"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   extended_image:
     dependency: transitive
     description:
@@ -152,6 +168,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  font_awesome_flutter:
+    dependency: "direct main"
+    description:
+      name: font_awesome_flutter
+      sha256: d3a89184101baec7f4600d58840a764d2ef760fe1c5a20ef9e6b0e9b24a07a3a
+      url: "https://pub.dev"
+    source: hosted
+    version: "10.8.0"
   http:
     dependency: transitive
     description:
