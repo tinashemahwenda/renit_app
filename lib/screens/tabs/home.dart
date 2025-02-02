@@ -45,28 +45,41 @@ class Home extends StatelessWidget {
           ShadCard(
             width: RenitSize.width,
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
               children: [
-                Column(
-                  spacing: 5,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      'Senior Developer',
-                      style: ShadTheme.of(context).textTheme.h4,
-                    ),
-                    Row(
+                    Column(
+                      spacing: 5,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      spacing: 10,
                       children: [
-                        Text('\$1K per month'),
-                        ShadBadge(child: Text('Full Time'))
+                        Text(
+                          'Senior Developer',
+                          style: ShadTheme.of(context).textTheme.h4,
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 10,
+                          children: [
+                            Text('\$1K per month'),
+                            ShadBadge(child: Text('Full Time'))
+                          ],
+                        ),
                       ],
-                    )
+                    ),
+                    Icon(FontAwesomeIcons.bookmark)
                   ],
                 ),
-                Icon(FontAwesomeIcons.bookmark)
+                Row(
+                  children: [
+                    ShadAvatar(
+                      'assets/images/renit-logo-white.png',
+                      size: Size.fromRadius(30),
+                      backgroundColor: Colors.black,
+                    )
+                  ],
+                )
               ],
             ),
           )
