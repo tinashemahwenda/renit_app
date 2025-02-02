@@ -1,10 +1,26 @@
+import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
-class HomePage extends StatelessWidget {
+enum _SelectedTab{home, saved, search, profile}
+
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+  var _selectedTab = _SelectedTab.home;
+
+  void _handleIndexChange(int i){
+    setState(() {
+      _selectedTab = _SelectedTab.values[i];
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +40,9 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: CrystalNavigationBar(
+        currentIndex: _SelectedTab.values.,
       ),
     );
   }
