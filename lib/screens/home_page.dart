@@ -39,11 +39,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: RenitColor.background,
       body: SafeArea(
-        child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-            child: _pages[_SelectedTab.values.indexOf(_selectedTab)]),
+        child: SingleChildScrollView(
+          child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+              child: _pages[_SelectedTab.values.indexOf(_selectedTab)]),
+        ),
       ),
       bottomNavigationBar: CrystalNavigationBar(
+        enableFloatingNavBar: true,
+        splashColor: Colors.transparent,
+        outlineBorderColor: Colors.transparent,
         currentIndex: _SelectedTab.values.indexOf(_selectedTab),
         height: 10,
         onTap: _handleIndexChange,
