@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/screens/tabs/home.dart';
+import 'package:renit_app/screens/tabs/search.dart';
 
 enum _SelectedTab { home, saved, search, profile }
 
@@ -25,14 +26,9 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     Home(),
     Center(
-      child: Text('Search'),
-    ),
-    Center(
       child: Text('Saved'),
     ),
-    Center(
-      child: Text('Settings'),
-    ),
+    SearchPage(),
   ];
   @override
   Widget build(BuildContext context) {
