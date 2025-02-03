@@ -49,7 +49,16 @@ class RenitJobCard extends StatelessWidget {
                     style: ShadTheme.of(context).textTheme.h4,
                   ),
                   Text(companyName),
-                  Text(location),
+                  Row(
+                    spacing: 2,
+                    children: [
+                      Icon(
+                        FontAwesomeIcons.locationDot,
+                        color: Colors.black38,
+                      ),
+                      Text(location),
+                    ],
+                  ),
                   SizedBox(height: 10),
                   Row(
                     spacing: 5,
