@@ -26,8 +26,12 @@ class Home extends StatelessWidget {
           ),
           SizedBox(
             child: ShadInput(
+              prefix: Icon(
+                FontAwesomeIcons.magnifyingGlass,
+                color: Colors.black38,
+              ),
               padding: EdgeInsets.all(20),
-              placeholder: Text('Search for job'),
+              placeholder: Text('Search for any job'),
               decoration: ShadDecoration(
                   border: ShadBorder.all(width: 1, color: Colors.black)),
             ),
