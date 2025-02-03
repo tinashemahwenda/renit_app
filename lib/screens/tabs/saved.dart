@@ -13,6 +13,16 @@ class SavedJobsPage extends StatelessWidget {
           'My Jobs',
           style: ShadTheme.of(context).textTheme.h3,
         ),
+        ShadTabs(tabs: [
+          ShadTab(
+            value: 'saved',
+            child: Text('Saved'),
+          ),
+          ShadTab(
+            value: 'applied',
+            child: Text('Applied'),
+          ),
+        ])
       ],
     ));
   }
