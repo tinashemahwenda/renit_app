@@ -15,7 +15,7 @@ class SavedJobsPage extends StatelessWidget {
         ),
         ShadTabs(tabs: [
           ShadTab(
-            value: 'saved',
+            value: 'save',
             child: Text('Saved'),
           ),
           ShadTab(
