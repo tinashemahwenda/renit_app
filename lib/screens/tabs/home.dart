@@ -24,10 +24,10 @@ class Home extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          Container(
+          SizedBox(
             child: ShadInput(
               padding: EdgeInsets.all(20),
-              placeholder: Text('Search for any job'),
+              placeholder: Text('Search for job'),
               decoration: ShadDecoration(
                   border: ShadBorder.all(width: 1, color: Colors.black)),
             ),
