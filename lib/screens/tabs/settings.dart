@@ -38,6 +38,7 @@ class SettingsPage extends StatelessWidget {
             color: Colors.white,
           ),
           child: Column(
+            spacing: 10,
             children: [
               Container(
                   child: Column(
@@ -49,16 +50,53 @@ class SettingsPage extends StatelessWidget {
                     style: ShadTheme.of(context).textTheme.large,
                   ),
                   SizedBox(height: 20),
-                  SettingsTile(),
-                  SettingsTile(),
-                  SettingsTile(),
-                  SettingsTile(),
+                  SettingsTile(settingsName: 'General Settings'),
+                  SettingsTile(
+                    settingsName: 'Personal Information',
+                  ),
+                  SettingsTile(
+                    settingsName: 'Account Settings',
+                  ),
                   SizedBox(height: 5)
                 ],
-              ))
+              )),
             ],
           ),
-        )
+        ),
+        SizedBox(height: 20),
+        Container(
+          width: RenitSize.width,
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.white,
+          ),
+          child: Column(
+            spacing: 10,
+            children: [
+              Container(
+                  child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 5),
+                  Text(
+                    'Skills & Experience',
+                    style: ShadTheme.of(context).textTheme.large,
+                  ),
+                  SizedBox(height: 20),
+                  SettingsTile(settingsName: 'Your Resume'),
+                  SettingsTile(
+                    settingsName: 'File Uploads',
+                  ),
+                  SettingsTile(
+                    settingsName: 'Job Interests',
+                  ),
+                  SizedBox(height: 5)
+                ],
+              )),
+            ],
+          ),
+        ),
       ],
     ));
   }

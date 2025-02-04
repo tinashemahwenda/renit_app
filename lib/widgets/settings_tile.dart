@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SettingsTile extends StatelessWidget {
-  const SettingsTile({super.key});
+  final String settingsName;
+  const SettingsTile({super.key, required this.settingsName});
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +12,7 @@ class SettingsTile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('Personal Information'),
-              Icon(Icons.arrow_forward_ios)
-            ],
+            children: [Text(settingsName), Icon(Icons.arrow_forward_ios)],
           ),
         ),
         Divider(),
