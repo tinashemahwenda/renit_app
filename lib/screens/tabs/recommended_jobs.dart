@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class SearchPage extends StatelessWidget {
@@ -15,7 +17,19 @@ class SearchPage extends StatelessWidget {
             style: ShadTheme.of(context).textTheme.h3,
           ),
         ),
-        Image.asset('assets/images/recommended_jobs.png')
+        SizedBox(height: 50),
+        ShadAlert(
+          icon: Icon(FontAwesomeIcons.circleExclamation),
+          title: Text(
+            'These are recomended jobs based on your experience, background and preferences',
+            style: ShadTheme.of(context).textTheme.small,
+          ),
+          decoration: ShadDecoration(
+            color: RenitColor.yellow.withAlpha(80),
+          ),
+        ),
+        SizedBox(height: 150),
+        Image.asset('assets/images/recommended_jobs.png'),
       ],
     ));
   }
