@@ -58,23 +58,23 @@ class Home extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: RenitJobCard(
-              jobTitle: 'Graphic Designer',
-              companyName: 'Renit Group',
+              jobTitle: 'Driver',
+              companyName: 'Fastlane Pvt',
               location: 'Harare, Zimbabwe',
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: RenitJobCard(
-              jobTitle: 'Graphic Designer',
-              companyName: 'Renit Group',
+              jobTitle: 'Project Manager',
+              companyName: 'Telnet Technologies',
               location: 'Harare, Zimbabwe',
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: RenitJobCard(
-              jobTitle: 'Graphic Designer',
+              jobTitle: 'System Adminstrator',
               companyName: 'Renit Group',
               location: 'Harare, Zimbabwe',
             ),
