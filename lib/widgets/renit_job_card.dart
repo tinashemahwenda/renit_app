@@ -24,7 +24,11 @@ class _RenitJobCardState extends State<RenitJobCard> {
 
   void onSave() {
     setState(() {
-      isSaved = true;
+      if (isSaved == false) {
+        isSaved = true;
+      } else {
+        isSaved = false;
+      }
     });
   }
 
@@ -82,7 +86,12 @@ class _RenitJobCardState extends State<RenitJobCard> {
                   ),
                 ],
               ),
-              Icon(FontAwesomeIcons.bookmark)
+              GestureDetector(
+                onTap: () => onSave(),
+                child: isSaved
+                    ? Icon(FontAwesomeIcons.solidBookmark)
+                    : Icon(FontAwesomeIcons.bookmark),
+              )
             ],
           ),
         ],
