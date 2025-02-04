@@ -21,7 +21,7 @@ class AppliedJobsTab extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 40,
+          height: 60,
         ),
         Image.asset('assets/images/applied-jobs.png'),
       ],
