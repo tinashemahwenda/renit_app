@@ -29,6 +29,7 @@ class SettingsPage extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
+        SizedBox(height: 10),
         Container(
           width: RenitSize.width,
           padding: EdgeInsets.all(10),
