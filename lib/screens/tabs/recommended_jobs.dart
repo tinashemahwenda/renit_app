@@ -15,6 +15,7 @@ class SearchPage extends StatelessWidget {
             style: ShadTheme.of(context).textTheme.h3,
           ),
         ),
+        Image.asset('assets/images/recommended_jobs.png')
       ],
     ));
   }
