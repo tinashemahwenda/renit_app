@@ -4,7 +4,7 @@ import 'package:shadcn_ui/shadcn_ui.dart';
 
 import '../constants/constants.dart';
 
-class RenitJobCard extends StatelessWidget {
+class RenitJobCard extends StatefulWidget {
   final String jobTitle;
   final String companyName;
   final String location;
@@ -14,6 +14,19 @@ class RenitJobCard extends StatelessWidget {
     required this.companyName,
     required this.location,
   });
+
+  @override
+  State<RenitJobCard> createState() => _RenitJobCardState();
+}
+
+class _RenitJobCardState extends State<RenitJobCard> {
+  bool isSaved = false;
+
+  void onSave() {
+    setState(() {
+      isSaved = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +58,10 @@ class RenitJobCard extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    jobTitle,
+                    widget.jobTitle,
                     style: ShadTheme.of(context).textTheme.h4,
                   ),
-                  Text(companyName),
+                  Text(widget.companyName),
                   Row(
                     spacing: 2,
                     children: [
@@ -56,7 +69,7 @@ class RenitJobCard extends StatelessWidget {
                         FontAwesomeIcons.locationDot,
                         color: Colors.black38,
                       ),
-                      Text(location),
+                      Text(widget.location),
                     ],
                   ),
                   SizedBox(height: 10),
