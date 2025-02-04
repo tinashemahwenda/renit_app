@@ -80,7 +80,7 @@ class SettingsPage extends StatelessWidget {
                 children: [
                   SizedBox(height: 5),
                   Text(
-                    'Skills & Experience',
+                    'Resume & Portfolio',
                     style: ShadTheme.of(context).textTheme.large,
                   ),
                   SizedBox(height: 20),
