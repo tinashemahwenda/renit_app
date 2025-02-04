@@ -32,7 +32,10 @@ class SettingsPage extends StatelessWidget {
         Container(
           width: RenitSize.width,
           padding: EdgeInsets.all(10),
-          color: Colors.white,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.white,
+          ),
           child: Column(
             children: [
               Container(
@@ -40,6 +43,7 @@ class SettingsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 20,
                 children: [
+                  SizedBox(height: 5),
                   Text(
                     'Personal Settings',
                     style: ShadTheme.of(context).textTheme.large,
@@ -48,6 +52,7 @@ class SettingsPage extends StatelessWidget {
                   SettingsTile(),
                   SettingsTile(),
                   SettingsTile(),
+                  SizedBox(height: 5)
                 ],
               ))
             ],
