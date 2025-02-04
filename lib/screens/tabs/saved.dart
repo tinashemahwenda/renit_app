@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class SavedJobsPage extends StatelessWidget {
@@ -13,16 +14,31 @@ class SavedJobsPage extends StatelessWidget {
           'My Jobs',
           style: ShadTheme.of(context).textTheme.h3,
         ),
-        ShadTabs(tabs: [
-          ShadTab(
-            value: 'save',
-            child: Text('Saved'),
+        SizedBox(height: 20),
+        ShadTabs(
+          decoration: ShadDecoration(
+            color: Colors.white,
           ),
-          ShadTab(
-            value: 'applied',
-            child: Text('Applied'),
-          ),
-        ])
+          value: 'tabs',
+          tabs: [
+            ShadTab(
+              enabled: true,
+              value: 'save',
+              child: Text('Saved'),
+              onPressed: () {
+                Center(
+                  child: Text('Saved Jobs'),
+                );
+              },
+              selectedBackgroundColor: RenitColor.background,
+            ),
+            ShadTab(
+              selectedBackgroundColor: RenitColor.background,
+              value: 'applied',
+              child: Text('Applied'),
+            ),
+          ],
+        )
       ],
     ));
   }
