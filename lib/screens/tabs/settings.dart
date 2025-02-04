@@ -41,13 +41,13 @@ class SettingsPage extends StatelessWidget {
               Container(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                spacing: 20,
                 children: [
                   SizedBox(height: 5),
                   Text(
                     'Personal Settings',
                     style: ShadTheme.of(context).textTheme.large,
                   ),
+                  SizedBox(height: 20),
                   SettingsTile(),
                   SettingsTile(),
                   SettingsTile(),
