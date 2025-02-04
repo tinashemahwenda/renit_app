@@ -18,7 +18,7 @@ class SettingsPage extends StatelessWidget {
             style: ShadTheme.of(context).textTheme.h3,
           ),
         ),
-        SizedBox(height: 40),
+        SizedBox(height: 20),
         ShadAlert(
           icon: Icon(FontAwesomeIcons.circleExclamation),
           title: Text(
