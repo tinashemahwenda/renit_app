@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/widgets/settings_tile.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class SettingsPage extends StatelessWidget {
@@ -35,14 +36,17 @@ class SettingsPage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Personal Information'),
-                    Icon(Icons.arrow_forward_ios)
-                  ],
-                ),
-              )
+                  child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: 10,
+                children: [
+                  Text(
+                    'Personal Settings',
+                    style: ShadTheme.of(context).textTheme.large,
+                  ),
+                  SettingsTile(),
+                ],
+              ))
             ],
           ),
         )
