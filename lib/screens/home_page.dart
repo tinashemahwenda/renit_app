@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/screens/tabs/home.dart';
 import 'package:renit_app/screens/tabs/saved.dart';
-import 'package:renit_app/screens/tabs/search.dart';
+import 'package:renit_app/screens/tabs/recommended_jobs.dart';
 import 'package:renit_app/screens/tabs/settings.dart';
 
 enum _SelectedTab { home, saved, search, profile }
