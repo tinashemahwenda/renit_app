@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
+
+import 'tab_contents/saved_tab_content.dart';
 
 class SavedJobsPage extends StatelessWidget {
   const SavedJobsPage({super.key});
@@ -23,7 +26,8 @@ class SavedJobsPage extends StatelessWidget {
           tabs: [
             ShadTab(
               enabled: true,
-              value: 'save',
+              value: 'tabs',
+              content: SavedTabContent(),
               child: Text('Saved'),
               onPressed: () {
                 Center(
@@ -38,7 +42,7 @@ class SavedJobsPage extends StatelessWidget {
               child: Text('Applied'),
             ),
           ],
-        )
+        ),
       ],
     ));
   }
