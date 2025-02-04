@@ -89,8 +89,8 @@ class _RenitJobCardState extends State<RenitJobCard> {
               GestureDetector(
                 onTap: () => onSave(),
                 child: isSaved
-                    ? Icon(FontAwesomeIcons.solidBookmark)
-                    : Icon(FontAwesomeIcons.bookmark),
+                    ? Icon(FontAwesomeIcons.solidBookmark, size: 20)
+                    : Icon(FontAwesomeIcons.bookmark, size: 20),
               )
             ],
           ),
