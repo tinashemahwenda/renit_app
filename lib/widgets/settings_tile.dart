@@ -5,9 +5,20 @@ class SettingsTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [Text('Personal Information'), Icon(Icons.arrow_forward_ios)],
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Personal Information'),
+              Icon(Icons.arrow_forward_ios)
+            ],
+          ),
+        ),
+        Divider(),
+      ],
     );
   }
 }
