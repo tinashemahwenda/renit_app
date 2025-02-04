@@ -8,15 +8,22 @@ class SavedTabContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ShadAlert(
-      icon: Icon(FontAwesomeIcons.circleExclamation),
-      title: Text(
-        'These are the jobs that you have saved. You can enable direct application',
-        style: ShadTheme.of(context).textTheme.small,
-      ),
-      decoration: ShadDecoration(
-        color: RenitColor.yellow.withAlpha(80),
-      ),
+    return Column(
+      children: [
+        ShadAlert(
+          icon: Icon(FontAwesomeIcons.circleExclamation),
+          title: Text(
+            'These are the jobs that you have saved. You can enable direct application',
+            style: ShadTheme.of(context).textTheme.small,
+          ),
+          decoration: ShadDecoration(
+            color: RenitColor.yellow.withAlpha(80),
+          ),
+        ),
+        Spacer(),
+        Image.asset('assets/images/saved-jobs.png'),
+        Spacer(),
+      ],
     );
   }
 }
