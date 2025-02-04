@@ -28,8 +28,24 @@ class SettingsPage extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
-        SizedBox(height: 100),
-        Image.asset('assets/images/account-settings.png')
+        Container(
+          width: RenitSize.width,
+          padding: EdgeInsets.all(10),
+          color: Colors.white,
+          child: Column(
+            children: [
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('Personal Information'),
+                    Icon(Icons.arrow_forward_ios)
+                  ],
+                ),
+              )
+            ],
+          ),
+        )
       ],
     ));
   }
