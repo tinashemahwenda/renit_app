@@ -21,7 +21,7 @@ class SavedTabContent extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 40,
+          height: 60,
         ),
         Image.asset('assets/images/saved-jobs.png'),
       ],
