@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/screens/tabs/tab_contents/applied_jobs_tab.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 import 'tab_contents/saved_tab_content.dart';
@@ -39,6 +40,7 @@ class SavedJobsPage extends StatelessWidget {
             ShadTab(
               selectedBackgroundColor: RenitColor.background,
               value: 'applied',
+              content: AppliedJobsTab(),
               child: Text('Applied'),
             ),
           ],
