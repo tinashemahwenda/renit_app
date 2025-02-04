@@ -20,9 +20,10 @@ class SavedTabContent extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
-        Spacer(),
+        SizedBox(
+          height: 40,
+        ),
         Image.asset('assets/images/saved-jobs.png'),
-        Spacer(),
       ],
     );
   }
