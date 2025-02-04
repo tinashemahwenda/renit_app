@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
             icon: FontAwesomeIcons.solidBookmark,
           ),
           CrystalNavigationBarItem(
-            icon: FontAwesomeIcons.rocket,
+            icon: FontAwesomeIcons.rocketchat,
           ),
           CrystalNavigationBarItem(
             icon: FontAwesomeIcons.userGear,
