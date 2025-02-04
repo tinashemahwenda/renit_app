@@ -81,7 +81,7 @@ class _RenitJobCardState extends State<RenitJobCard> {
                     spacing: 5,
                     children: [
                       ShadBadge.secondary(child: Text('Full Time')),
-                      ShadBadge(child: Text('High Salary'))
+                      ShadBadge(child: Text('High Salary')),
                     ],
                   ),
                 ],
