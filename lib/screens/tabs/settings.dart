@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/screens/settings_screens/general_settings.dart';
 import 'package:renit_app/widgets/settings_tile.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -50,7 +51,12 @@ class SettingsPage extends StatelessWidget {
                     style: ShadTheme.of(context).textTheme.large,
                   ),
                   SizedBox(height: 20),
-                  SettingsTile(settingsName: 'General Settings'),
+                  InkWell(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => GeneralSettings())),
+                      child: SettingsTile(settingsName: 'General Settings')),
                   SettingsTile(
                     settingsName: 'Personal Information',
                   ),
