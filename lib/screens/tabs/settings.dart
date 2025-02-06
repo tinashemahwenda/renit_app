@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/screens/settings_screens/general_settings.dart';
+import 'package:renit_app/screens/settings_screens/personal_info_settings.dart';
 import 'package:renit_app/widgets/settings_tile.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -57,8 +58,14 @@ class SettingsPage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => GeneralSettings())),
                       child: SettingsTile(settingsName: 'General Settings')),
-                  SettingsTile(
-                    settingsName: 'Personal Information',
+                  InkWell(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PersonalInfoSettings())),
+                    child: SettingsTile(
+                      settingsName: 'Personal Information',
+                    ),
                   ),
                   SettingsTile(
                     settingsName: 'Account Settings',
