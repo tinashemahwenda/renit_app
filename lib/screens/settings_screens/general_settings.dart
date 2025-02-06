@@ -17,11 +17,15 @@ class GeneralSettings extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.arrow_back_ios_new),
+                  InkWell(
+                      onTap: () => Navigator.pop(context),
+                      child: Icon(Icons.arrow_back_ios_new)),
+                  Spacer(),
                   Text(
                     'General Settings',
                     style: ShadTheme.of(context).textTheme.h4,
-                  )
+                  ),
+                  Spacer(),
                 ],
               )
             ],
