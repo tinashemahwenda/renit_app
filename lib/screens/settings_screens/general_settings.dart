@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class GeneralSettings extends StatelessWidget {
@@ -7,6 +8,7 @@ class GeneralSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: RenitColor.background,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -27,7 +29,7 @@ class GeneralSettings extends StatelessWidget {
                   ),
                   Spacer(),
                 ],
-              )
+              ),
             ],
           ),
         ),
