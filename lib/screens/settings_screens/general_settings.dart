@@ -30,6 +30,99 @@ class GeneralSettings extends StatelessWidget {
                   Spacer(),
                 ],
               ),
+              SizedBox(
+                height: 40,
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  color: Colors.white,
+                  width: RenitSize.width,
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Notifications Settings',
+                        style: ShadTheme.of(context).textTheme.table,
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('New jobs notifications'),
+                          ShadSwitch(
+                            value: true,
+                            enabled: true,
+                            onChanged: (value) => true,
+                            checkedTrackColor: RenitColor.yellow,
+                          )
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Recommended jobs notifications'),
+                          ShadSwitch(
+                            value: true,
+                            enabled: true,
+                            onChanged: (value) => true,
+                            checkedTrackColor: RenitColor.yellow,
+                          )
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Application tracking notifications'),
+                          ShadSwitch(
+                            value: true,
+                            enabled: true,
+                            onChanged: (value) => true,
+                            checkedTrackColor: RenitColor.yellow,
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                  color: Colors.white,
+                  width: RenitSize.width,
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Location Settings',
+                        style: ShadTheme.of(context).textTheme.table,
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Make location visible'),
+                          ShadSwitch(
+                            value: true,
+                            enabled: true,
+                            onChanged: (value) => true,
+                            checkedTrackColor: RenitColor.yellow,
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text('Select location for jobs'),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
