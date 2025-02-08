@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 class PersonalInfoSettings extends StatelessWidget {
   const PersonalInfoSettings({super.key});
@@ -22,6 +23,15 @@ class PersonalInfoSettings extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
+                ),
+                child: Column(
+                  children: [
+                    ShadAvatar(
+                      'assets/images/account-image.png',
+                      size: Size.fromRadius(100),
+                      fit: BoxFit.cover,
+                    )
+                  ],
                 ),
               )
             ],
