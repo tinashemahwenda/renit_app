@@ -36,16 +36,16 @@ class PersonalInfoSettings extends StatelessWidget {
                           ShadAvatar(
                             'assets/images/account-image.png',
                             size: Size.fromRadius(60),
-                            fit: BoxFit.cover,
+                            //fit: BoxFit.cover,
                           ),
                           CircleAvatar(
+                            radius: 12,
+                            backgroundColor: RenitColor.yellow,
                             child: Icon(
                               Icons.edit,
                               size: 12,
                               color: Colors.black,
                             ),
-                            radius: 12,
-                            backgroundColor: RenitColor.yellow,
                           )
                         ],
                       ),
