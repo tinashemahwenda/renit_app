@@ -71,8 +71,63 @@ class PersonalInfoSettings extends StatelessWidget {
                       'Personal Details',
                       style: ShadTheme.of(context).textTheme.table,
                     ),
+                    Column(
+                      spacing: 5,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Your Email'),
+                        ShadInput(
+                          placeholder: Text('mahwendatinashe@gmail.com'),
+                        )
+                      ],
+                    ),
+                    Column(
+                      spacing: 5,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Phone Number'),
+                        ShadInput(
+                          placeholder: Text('mahwendatinashe@gmail.com'),
+                        )
+                      ],
+                    ),
+                    Column(
+                      spacing: 5,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Physical Address'),
+                        ShadInput(
+                          placeholder: Text('mahwendatinashe@gmail.com'),
+                        )
+                      ],
+                    ),
+                    Column(
+                      spacing: 5,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Location'),
+                        ShadInput(
+                          placeholder: Text('mahwendatinashe@gmail.com'),
+                        )
+                      ],
+                    ),
+                    Column(
+                      spacing: 5,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Language'),
+                        ShadInput(
+                          placeholder: Text('mahwendatinashe@gmail.com'),
+                        )
+                      ],
+                    ),
                   ],
                 ),
+              ),
+              Spacer(),
+              ShadButton(
+                width: RenitSize.width,
+                child: Text('Save'),
               )
             ],
           ),
