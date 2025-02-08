@@ -88,7 +88,7 @@ class PersonalInfoSettings extends StatelessWidget {
                         children: [
                           Text('Phone Number'),
                           ShadInput(
-                            placeholder: Text('mahwendatinashe@gmail.com'),
+                            placeholder: Text('+263713339762'),
                           )
                         ],
                       ),
@@ -98,7 +98,7 @@ class PersonalInfoSettings extends StatelessWidget {
                         children: [
                           Text('Physical Address'),
                           ShadInput(
-                            placeholder: Text('mahwendatinashe@gmail.com'),
+                            placeholder: Text('12965 Unit N Seke Chitungwiza'),
                           )
                         ],
                       ),
@@ -108,7 +108,7 @@ class PersonalInfoSettings extends StatelessWidget {
                         children: [
                           Text('Location'),
                           ShadInput(
-                            placeholder: Text('mahwendatinashe@gmail.com'),
+                            placeholder: Text('Harare, Zimbabwe'),
                           )
                         ],
                       ),
@@ -118,7 +118,7 @@ class PersonalInfoSettings extends StatelessWidget {
                         children: [
                           Text('Language'),
                           ShadInput(
-                            placeholder: Text('mahwendatinashe@gmail.com'),
+                            placeholder: Text('English'),
                           )
                         ],
                       ),
@@ -128,6 +128,7 @@ class PersonalInfoSettings extends StatelessWidget {
                 ShadButton(
                   width: RenitSize.width,
                   child: Text('Save'),
+                  onPressed: () => Navigator.pop(context),
                 )
               ],
             ),
