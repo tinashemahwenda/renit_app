@@ -10,8 +10,8 @@ class PersonalInfoSettings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: RenitColor.background,
-      body: SafeArea(
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
             child: Column(
@@ -125,7 +125,6 @@ class PersonalInfoSettings extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
                 ShadButton(
                   width: RenitSize.width,
                   child: Text('Save'),
