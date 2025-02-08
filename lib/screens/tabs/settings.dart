@@ -43,7 +43,7 @@ class SettingsPage extends StatelessWidget {
           child: Column(
             spacing: 10,
             children: [
-              Container(
+              SizedBox(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -96,7 +96,7 @@ class SettingsPage extends StatelessWidget {
           child: Column(
             spacing: 10,
             children: [
-              Container(
+              SizedBox(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
