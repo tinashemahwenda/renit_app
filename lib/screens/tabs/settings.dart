@@ -58,6 +58,7 @@ class SettingsPage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => GeneralSettings())),
                       child: SettingsTile(settingsName: 'General Settings')),
+                  Divider(),
                   InkWell(
                     onTap: () => Navigator.push(
                         context,
@@ -67,6 +68,7 @@ class SettingsPage extends StatelessWidget {
                       settingsName: 'Personal Information',
                     ),
                   ),
+                  Divider(),
                   SettingsTile(
                     settingsName: 'Account Settings',
                   ),
@@ -98,9 +100,11 @@ class SettingsPage extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   SettingsTile(settingsName: 'Your Resume'),
+                  Divider(),
                   SettingsTile(
-                    settingsName: 'File Uploads',
+                    settingsName: 'Resume Assessment',
                   ),
+                  Divider(),
                   SettingsTile(
                     settingsName: 'Job Interests',
                   ),
