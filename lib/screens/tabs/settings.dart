@@ -113,7 +113,11 @@ class SettingsPage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => ResumePage())),
-                      child: SettingsTile(settingsName: 'Your Resume')),
+                      child: SettingsTile(settingsName: 'Create Resume')),
+                  Divider(),
+                  SettingsTile(
+                    settingsName: 'Your Resume',
+                  ),
                   Divider(),
                   InkWell(
                     onTap: () => Navigator.push(
@@ -123,10 +127,6 @@ class SettingsPage extends StatelessWidget {
                     child: SettingsTile(
                       settingsName: 'Resume Assessment',
                     ),
-                  ),
-                  Divider(),
-                  SettingsTile(
-                    settingsName: 'Job Interests',
                   ),
                   SizedBox(height: 5)
                 ],
