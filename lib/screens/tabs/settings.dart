@@ -6,6 +6,7 @@ import 'package:renit_app/screens/settings_screens/general_settings.dart';
 import 'package:renit_app/screens/settings_screens/personal_info_settings.dart';
 import 'package:renit_app/screens/settings_screens/resume_assessment.dart';
 import 'package:renit_app/screens/settings_screens/resume_page.dart';
+import 'package:renit_app/screens/settings_screens/your_resume.dart';
 import 'package:renit_app/widgets/settings_tile.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -115,8 +116,12 @@ class SettingsPage extends StatelessWidget {
                               builder: (context) => ResumePage())),
                       child: SettingsTile(settingsName: 'Create Resume')),
                   Divider(),
-                  SettingsTile(
-                    settingsName: 'Your Resume',
+                  InkWell(
+                    onTap: () => Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => YourResume())),
+                    child: SettingsTile(
+                      settingsName: 'Your Resume',
+                    ),
                   ),
                   Divider(),
                   InkWell(
