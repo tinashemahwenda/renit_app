@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
 
 class ResumeAssessment extends StatelessWidget {
@@ -7,6 +8,7 @@ class ResumeAssessment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: RenitColor.background,
       body: SafeArea(
           child: Padding(
         padding: EdgeInsets.all(20),
