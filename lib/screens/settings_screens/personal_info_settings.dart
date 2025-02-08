@@ -29,7 +29,6 @@ class PersonalInfoSettings extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
-                    spacing: 20,
                     children: [
                       Stack(
                         alignment: Alignment.bottomRight,
@@ -50,10 +49,22 @@ class PersonalInfoSettings extends StatelessWidget {
                           )
                         ],
                       ),
+                      SizedBox(height: 20),
                       Text(
                         'Tinashe Mahwenda',
                         style: ShadTheme.of(context).textTheme.h4,
                       ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        spacing: 10,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.green,
+                            radius: 5,
+                          ),
+                          Text('Open for work')
+                        ],
+                      )
                     ],
                   ),
                 ),
