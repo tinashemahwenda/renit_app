@@ -14,9 +14,12 @@ class PersonalInfoSettings extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
           child: Column(
-            spacing: 20,
+            spacing: 10,
             children: [
               RenitInternalNavbar(navbarTitle: 'Personal Settings'),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 width: RenitSize.width,
                 padding: EdgeInsets.all(20),
@@ -53,6 +56,24 @@ class PersonalInfoSettings extends StatelessWidget {
                   ],
                 ),
               ),
+              Container(
+                width: RenitSize.width,
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Column(
+                  spacing: 20,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Personal Details',
+                      style: ShadTheme.of(context).textTheme.table,
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
