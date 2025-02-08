@@ -29,13 +29,13 @@ class SavedJobsPage extends StatelessWidget {
               enabled: true,
               value: 'tabs',
               content: SavedTabContent(),
-              child: Text('Saved'),
               onPressed: () {
                 Center(
                   child: Text('Saved Jobs'),
                 );
               },
               selectedBackgroundColor: RenitColor.background,
+              child: Text('Saved'),
             ),
             ShadTab(
               selectedBackgroundColor: RenitColor.background,
