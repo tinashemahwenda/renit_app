@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/screens/settings_screens/account_settings.dart';
 import 'package:renit_app/screens/settings_screens/general_settings.dart';
 import 'package:renit_app/screens/settings_screens/personal_info_settings.dart';
 import 'package:renit_app/widgets/settings_tile.dart';
@@ -69,8 +70,14 @@ class SettingsPage extends StatelessWidget {
                     ),
                   ),
                   Divider(),
-                  SettingsTile(
-                    settingsName: 'Account Settings',
+                  InkWell(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AccountSettings())),
+                    child: SettingsTile(
+                      settingsName: 'Account Settings',
+                    ),
                   ),
                   SizedBox(height: 5)
                 ],
