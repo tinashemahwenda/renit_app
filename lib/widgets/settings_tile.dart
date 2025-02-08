@@ -15,7 +15,6 @@ class SettingsTile extends StatelessWidget {
             children: [Text(settingsName), Icon(Icons.arrow_forward_ios)],
           ),
         ),
-        Divider(),
       ],
     );
   }
