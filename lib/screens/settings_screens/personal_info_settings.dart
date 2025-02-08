@@ -25,15 +25,34 @@ class PersonalInfoSettings extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
+                  spacing: 20,
                   children: [
-                    ShadAvatar(
-                      'assets/images/account-image.png',
-                      size: Size.fromRadius(100),
-                      fit: BoxFit.cover,
-                    )
+                    Stack(
+                      alignment: Alignment.bottomRight,
+                      children: [
+                        ShadAvatar(
+                          'assets/images/account-image.png',
+                          size: Size.fromRadius(60),
+                          fit: BoxFit.cover,
+                        ),
+                        CircleAvatar(
+                          child: Icon(
+                            Icons.edit,
+                            size: 12,
+                            color: Colors.black,
+                          ),
+                          radius: 12,
+                          backgroundColor: RenitColor.yellow,
+                        )
+                      ],
+                    ),
+                    Text(
+                      'Tinashe Mahwenda',
+                      style: ShadTheme.of(context).textTheme.h4,
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
