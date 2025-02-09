@@ -31,9 +31,9 @@ class AppliedJobsTab extends StatelessWidget {
         Row(
           spacing: 5,
           children: [
-            ShadBadge(child: Text('Applied: 10')),
-            ShadBadge(child: Text('Pending: 3')),
-            ShadBadge(child: Text('Delivered: 5')),
+            ShadBadge.secondary(child: Text('Applied: 10')),
+            ShadBadge.secondary(child: Text('Pending: 3')),
+            ShadBadge.secondary(child: Text('Delivered: 5')),
           ],
         ),
         SizedBox(height: 10),
