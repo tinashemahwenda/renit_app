@@ -31,14 +31,14 @@ class SavedTabContent extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: RenitJobCard(
                 jobTitle: 'Graphic Designer',
                 companyName: 'Renit Group',
                 location: 'Bulawayo, Zimbabwe'),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: RenitJobCard(
                 jobTitle: 'Driver',
                 companyName: 'FastLane Pvt',
