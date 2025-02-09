@@ -39,9 +39,9 @@ class RenitAppliedJobCard extends StatelessWidget {
             value: progressValue,
             innerBorderRadius: BorderRadius.circular(10),
             minHeight: 8,
-            color: progressValue > 0.25
+            color: progressValue >= 0.25
                 ? Colors.red
-                : progressValue > 0.5
+                : progressValue >= 0.5
                     ? Colors.amberAccent
                     : Colors.green,
           )
