@@ -42,7 +42,7 @@ class AppliedJobsTab extends StatelessWidget {
             roleName: 'Graphic Designer',
             roleCompany: 'Renit group',
             progressStatus: 'Received for assessment(1/4)',
-            progressValue: 0.25)
+            progressValue: 0.25),
       ],
     );
   }
