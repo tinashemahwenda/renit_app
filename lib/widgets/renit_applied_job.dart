@@ -4,9 +4,16 @@ import 'package:shadcn_ui/shadcn_ui.dart';
 
 class RenitAppliedJobCard extends StatelessWidget {
   final String roleName;
-  final String roleCOmpany;
+  final String roleCompany;
+  final String progressStatus;
   final double progressValue;
-  const RenitAppliedJobCard({super.key});
+  const RenitAppliedJobCard({
+    super.key,
+    required this.roleName,
+    required this.roleCompany,
+    required this.progressStatus,
+    required this.progressValue,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,17 +29,21 @@ class RenitAppliedJobCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Graphic Designer',
+            roleName,
             style: ShadTheme.of(context).textTheme.table,
           ),
-          Text('Renit Group'),
-          Text('Status: Received for Assessment(1/4)'),
+          Text(roleCompany),
+          Text('Status: $progressStatus'),
           SizedBox(height: 10),
           ShadProgress(
-            value: 0.25,
+            value: progressValue,
             innerBorderRadius: BorderRadius.circular(10),
             minHeight: 8,
-            color: Colors.red,
+            color: progressValue > 0.25
+                ? Colors.red
+                : progressValue > 0.5
+                    ? Colors.amberAccent
+                    : Colors.green,
           )
         ],
       ),
