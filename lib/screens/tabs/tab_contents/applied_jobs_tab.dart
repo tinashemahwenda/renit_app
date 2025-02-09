@@ -43,6 +43,16 @@ class AppliedJobsTab extends StatelessWidget {
             roleCompany: 'Renit group',
             progressStatus: 'Received for assessment(1/4)',
             progressValue: 0.25),
+        RenitAppliedJobCard(
+            roleName: 'UI/UX Designer',
+            roleCompany: 'Renit group',
+            progressStatus: 'Interview Invitation Calls(3/4)',
+            progressValue: 0.80),
+        RenitAppliedJobCard(
+            roleName: 'Graphic Designer',
+            roleCompany: 'Renit group',
+            progressStatus: 'Screening Process(2/4)',
+            progressValue: 0.5),
       ],
     );
   }
