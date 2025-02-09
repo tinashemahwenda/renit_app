@@ -27,7 +27,7 @@ class SavedJobsPage extends StatelessWidget {
           tabs: [
             ShadTab(
               enabled: true,
-              value: 'tabs',
+              value: '',
               content: SavedTabContent(),
               onPressed: () {
                 Center(
@@ -39,7 +39,7 @@ class SavedJobsPage extends StatelessWidget {
             ),
             ShadTab(
               selectedBackgroundColor: RenitColor.background,
-              value: 'applied',
+              value: 'tabs',
               content: AppliedJobsTab(),
               child: Text('Applied'),
             ),
