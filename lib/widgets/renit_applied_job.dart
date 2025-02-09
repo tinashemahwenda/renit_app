@@ -30,9 +30,25 @@ class RenitAppliedJobCard extends StatelessWidget {
           spacing: 5,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              roleName,
-              style: ShadTheme.of(context).textTheme.table,
+            Row(
+              spacing: 5,
+              children: [
+                Text(
+                  roleName,
+                  style: ShadTheme.of(context).textTheme.table,
+                ),
+                progressValue <= 0.25
+                    ? ShadBadge.outline(child: Text('Pending'))
+                    : progressValue <= 0.5
+                        ? ShadBadge.outline(child: Text('Pending'))
+                        : ShadBadge(
+                            child: Text(
+                              'Success',
+                            ),
+                            backgroundColor: Colors.green[100],
+                            foregroundColor: Colors.green,
+                          ),
+              ],
             ),
             Text(roleCompany),
             Text('Status: $progressStatus'),
@@ -41,9 +57,9 @@ class RenitAppliedJobCard extends StatelessWidget {
               value: progressValue,
               innerBorderRadius: BorderRadius.circular(10),
               minHeight: 8,
-              color: progressValue >= 0.25
+              color: progressValue <= 0.25
                   ? Colors.red
-                  : progressValue >= 0.5
+                  : progressValue <= 0.5
                       ? Colors.amberAccent
                       : Colors.green,
             )
