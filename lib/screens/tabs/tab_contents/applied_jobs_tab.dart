@@ -9,6 +9,7 @@ class AppliedJobsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ShadAlert(
           icon: Icon(FontAwesomeIcons.circleExclamation),
@@ -20,10 +21,15 @@ class AppliedJobsTab extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
-        SizedBox(
-          height: 60,
-        ),
-        Image.asset('assets/images/applied-jobs.png'),
+        Text('Appled Jobs'),
+        Row(
+          spacing: 5,
+          children: [
+            ShadBadge(child: Text('Applied: 10')),
+            ShadBadge(child: Text('Pending: 3')),
+            ShadBadge(child: Text('Delivered: 5')),
+          ],
+        )
       ],
     );
   }
