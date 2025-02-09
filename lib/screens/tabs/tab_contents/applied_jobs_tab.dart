@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/widgets/renit_applied_job.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class AppliedJobsTab extends StatelessWidget {
@@ -37,6 +38,11 @@ class AppliedJobsTab extends StatelessWidget {
           ],
         ),
         SizedBox(height: 20),
+        RenitAppliedJobCard(
+            roleName: 'Graphic Designer',
+            roleCompany: 'Renit group',
+            progressStatus: 'Received for assessment(1/4)',
+            progressValue: 0.25)
       ],
     );
   }
