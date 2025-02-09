@@ -21,7 +21,13 @@ class AppliedJobsTab extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
-        Text('Appled Jobs'),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: Text(
+            'Appled Jobs',
+            style: ShadTheme.of(context).textTheme.large,
+          ),
+        ),
         Row(
           spacing: 5,
           children: [
