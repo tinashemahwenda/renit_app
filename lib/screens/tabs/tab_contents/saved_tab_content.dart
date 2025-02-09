@@ -9,31 +9,43 @@ class SavedTabContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ShadAlert(
-          icon: Icon(FontAwesomeIcons.circleExclamation),
-          title: Text(
-            'These are the jobs that you have saved. You can enable direct application',
-            style: ShadTheme.of(context).textTheme.small,
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ShadAlert(
+            icon: Icon(FontAwesomeIcons.circleExclamation),
+            title: Text(
+              'These are the jobs that you have saved. You can enable direct application',
+              style: ShadTheme.of(context).textTheme.small,
+            ),
+            decoration: ShadDecoration(
+              color: RenitColor.yellow.withAlpha(80),
+            ),
           ),
-          decoration: ShadDecoration(
-            color: RenitColor.yellow.withAlpha(80),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Your saved jobs',
+              style: ShadTheme.of(context).textTheme.large,
+            ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            'Your saved jobs',
-            style: ShadTheme.of(context).textTheme.large,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: RenitJobCard(
+                jobTitle: 'Graphic Designer',
+                companyName: 'Renit Group',
+                location: 'Bulawayo, Zimbabwe'),
           ),
-        ),
-        RenitJobCard(
-            jobTitle: 'Graphic Designer',
-            companyName: 'Renit Group',
-            location: 'Bulawayo, Zimbabwe')
-      ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: RenitJobCard(
+                jobTitle: 'Driver',
+                companyName: 'FastLane Pvt',
+                location: 'Bulawayo, Zimbabwe'),
+          ),
+        ],
+      ),
     );
   }
 }
