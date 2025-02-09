@@ -3,6 +3,9 @@ import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
 class RenitAppliedJobCard extends StatelessWidget {
+  final String roleName;
+  final String roleCOmpany;
+  final double progressValue;
   const RenitAppliedJobCard({super.key});
 
   @override
