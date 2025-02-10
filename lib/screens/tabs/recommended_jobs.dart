@@ -28,6 +28,8 @@ class SearchPage extends StatelessWidget {
             color: RenitColor.yellow.withAlpha(80),
           ),
         ),
+        SizedBox(height: 150),
+        Image.asset('assets/images/recommended_jobs.png'),
       ],
     ));
   }

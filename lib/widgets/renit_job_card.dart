@@ -35,6 +35,7 @@ class _RenitJobCardState extends State<RenitJobCard> {
   @override
   Widget build(BuildContext context) {
     return ShadCard(
+      shadows: [BoxShadow(offset: Offset.zero)],
       width: RenitSize.width,
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       child: Column(
