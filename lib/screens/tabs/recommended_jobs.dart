@@ -29,7 +29,7 @@ class SearchPage extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 60,
+          height: 200,
         ),
         CircularProgressIndicator(),
       ],
