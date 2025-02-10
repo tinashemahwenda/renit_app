@@ -227,6 +227,18 @@ class RenitJobDetails extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 10),
+                        Text(
+                            'Renit Group is a dynamic and innovative company specializing in [mention industry, e.g., branding, marketing, tech solutions]. We are committed to delivering top-tier creative solutions to our clients. As we continue to grow, we are looking for a talented and passionate Graphic Designer to join our team.'),
+                        SizedBox(height: 10),
+                        Text(
+                          'About this Job',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                            '1. Design and produce high-quality graphics for digital and print media, including social media, websites, marketing materials, and branding assets.\n\n2. Develop creative concepts that align with brand guidelines and client expectations.\n\n3. Collaborate with the marketing and content teams to create visually engaging campaigns.\n\n4.Stay updated with industry trends and design tools to enhance creative output. \n\n5.Manage multiple design projects while meeting deadlines.'),
                       ],
                     ),
                   ),
