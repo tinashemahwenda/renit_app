@@ -25,7 +25,7 @@ class AppliedJobsTab extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Text(
-            'Appled Jobs',
+            'Track Job Applications',
             style: ShadTheme.of(context).textTheme.large,
           ),
         ),
