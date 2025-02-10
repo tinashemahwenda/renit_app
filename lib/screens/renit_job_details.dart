@@ -14,32 +14,26 @@ class RenitJobDetails extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 20,
-                        vertical: 40,
-                      ),
-                      child: InkWell(
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InkWell(
                         onTap: () => Navigator.pop(context),
                         child:
                             CircleAvatar(child: Icon(Icons.arrow_back_ios_new)),
                       ),
-                    ),
-                    Row(
-                      spacing: 10,
-                      children: [
-                        CircleAvatar(child: Icon(Icons.bookmark_add)),
-                        CircleAvatar(child: Icon(Icons.share)),
-                      ],
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 40,
-                  //child: Image.asset('assets/images/renit-logo.png'),
+                      Row(
+                        spacing: 10,
+                        children: [
+                          CircleAvatar(child: Icon(Icons.bookmark_add)),
+                          CircleAvatar(child: Icon(Icons.share)),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 Container(
                   width: RenitSize.width,
