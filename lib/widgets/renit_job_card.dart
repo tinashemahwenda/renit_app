@@ -8,11 +8,13 @@ class RenitJobCard extends StatefulWidget {
   final String jobTitle;
   final String companyName;
   final String location;
+  final String jobType;
   const RenitJobCard({
     super.key,
     required this.jobTitle,
     required this.companyName,
     required this.location,
+    required this.jobType,
   });
 
   @override
