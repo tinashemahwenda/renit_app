@@ -17,7 +17,10 @@ class RenitJobDetails extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CircleAvatar(child: Icon(Icons.arrow_back_ios_new)),
+                InkWell(
+                  onTap: () => Navigator.pop(context),
+                  child: CircleAvatar(child: Icon(Icons.arrow_back_ios_new)),
+                ),
                 Row(
                   spacing: 10,
                   children: [
