@@ -53,6 +53,7 @@ class Home extends StatelessWidget {
               jobTitle: 'Graphic Designer',
               companyName: 'Renit Group',
               location: 'Harare, Zimbabwe',
+              jobType: 'High Salary',
             ),
           ),
           Padding(
@@ -61,6 +62,7 @@ class Home extends StatelessWidget {
               jobTitle: 'Driver',
               companyName: 'Fastlane Pvt',
               location: 'Harare, Zimbabwe',
+              jobType: 'Mid-range',
             ),
           ),
           Padding(
@@ -69,6 +71,7 @@ class Home extends StatelessWidget {
               jobTitle: 'Project Manager',
               companyName: 'Telnet Technologies',
               location: 'Harare, Zimbabwe',
+              jobType: 'Entry Level',
             ),
           ),
           Padding(
@@ -77,6 +80,7 @@ class Home extends StatelessWidget {
               jobTitle: 'System Adminstrator',
               companyName: 'Renit Group',
               location: 'Harare, Zimbabwe',
+              jobType: 'Expert',
             ),
           ),
         ],

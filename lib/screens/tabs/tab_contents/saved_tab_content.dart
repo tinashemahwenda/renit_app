@@ -33,16 +33,20 @@ class SavedTabContent extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: RenitJobCard(
-                jobTitle: 'Graphic Designer',
-                companyName: 'Renit Group',
-                location: 'Bulawayo, Zimbabwe'),
+              jobTitle: 'Graphic Designer',
+              companyName: 'Renit Group',
+              location: 'Bulawayo, Zimbabwe',
+              jobType: 'High Salary',
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: RenitJobCard(
-                jobTitle: 'Driver',
-                companyName: 'FastLane Pvt',
-                location: 'Bulawayo, Zimbabwe'),
+              jobTitle: 'Driver',
+              companyName: 'FastLane Pvt',
+              location: 'Bulawayo, Zimbabwe',
+              jobType: 'Mid-range',
+            ),
           ),
         ],
       ),
