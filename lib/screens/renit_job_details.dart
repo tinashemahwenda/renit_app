@@ -39,6 +39,7 @@ class RenitJobDetails extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 40,
+                  //child: Image.asset('assets/images/renit-logo.png'),
                 ),
                 Container(
                   height: RenitSize.height,
@@ -50,16 +51,21 @@ class RenitJobDetails extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 2,
                       children: [
                         SizedBox(height: 20),
-                        Text(
-                          'Graphic Designer',
-                          style: ShadTheme.of(context).textTheme.h4,
+                        Center(
+                          child: Text(
+                            'Graphic Designer',
+                            style: ShadTheme.of(context).textTheme.h4,
+                          ),
                         ),
-                        Text(
-                          'Renit Group',
-                          style: ShadTheme.of(context).textTheme.muted,
+                        Center(
+                          child: Text(
+                            'Renit Group',
+                            style: ShadTheme.of(context).textTheme.muted,
+                          ),
                         ),
                         Center(
                           child: Row(
@@ -207,12 +213,20 @@ class RenitJobDetails extends StatelessWidget {
                                         ),
                                       ),
                                     ],
-                                  )
+                                  ),
                                 ],
                               ),
                             ),
                           ],
                         ),
+                        SizedBox(height: 20),
+                        Text(
+                          'About this Job',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 10),
                       ],
                     ),
                   ),
