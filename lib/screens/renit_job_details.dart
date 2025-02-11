@@ -40,10 +40,9 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                         spacing: 10,
                         children: [
                           InkWell(
-                              onTap: () => shareJob(context),
                               child: CircleAvatar(child: Icon(Icons.share))),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
