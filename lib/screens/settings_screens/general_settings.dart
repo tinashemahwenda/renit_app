@@ -3,9 +3,23 @@ import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
-class GeneralSettings extends StatelessWidget {
+class GeneralSettings extends StatefulWidget {
   const GeneralSettings({super.key});
 
+  @override
+  State<GeneralSettings> createState() => _GeneralSettingsState();
+}
+
+class _GeneralSettingsState extends State<GeneralSettings> {
+  String selectedValue = 'Any';
+  final List<String> locations = [
+    'Any',
+    'Harare',
+    'Bulawayo',
+    'Mutare',
+    'Masvingo',
+    'Other'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,11 +117,6 @@ class GeneralSettings extends StatelessWidget {
                           )
                         ],
                       ),
-                      Row(
-                        children: [
-                          Text('Select location for jobs'),
-                        ],
-                      )
                     ],
                   ),
                 ),
