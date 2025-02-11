@@ -34,8 +34,16 @@ class SettingsPage extends StatelessWidget {
           child: Row(
             spacing: 10,
             children: [
-              CircleAvatar(
-                child: Image.asset('assets/images/account-image.png'),
+              Stack(
+                children: [
+                  CircleAvatar(
+                    child: Image.asset('assets/images/account-image.png'),
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.green,
+                    radius: 5,
+                  )
+                ],
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
