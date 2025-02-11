@@ -221,7 +221,7 @@ class RenitJobDetails extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(
-                            'Renit Group is a dynamic and innovative company specializing in [mention industry, e.g., branding, marketing, tech solutions]. We are committed to delivering top-tier creative solutions to our clients. As we continue to grow, we are looking for a talented and passionate Graphic Designer to join our team.'),
+                            'Renit Group is a dynamic and innovative company specializing in offering Marketing and Software Development Solutions. We are committed to delivering top-tier creative solutions to our clients. As we continue to grow, we are looking for a talented and passionate Graphic Designer to join our team.'),
                         SizedBox(height: 10),
                         Text(
                           'Job Description',
@@ -252,6 +252,7 @@ class RenitJobDetails extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: ShadButton(
+          //backgroundColor: RenitColor.yellow,
           child: Row(
             spacing: 5,
             children: [
