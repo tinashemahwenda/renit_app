@@ -49,6 +49,10 @@ class AccountSettings extends StatelessWidget {
                       child: Row(
                         spacing: 10,
                         children: [
+                          Icon(
+                            Icons.logout,
+                            color: Colors.grey,
+                          ),
                           Text(
                             'Sign Out',
                             style: TextStyle(
@@ -67,7 +71,12 @@ class AccountSettings extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Row(
+                        spacing: 10,
                         children: [
+                          Icon(
+                            Icons.delete_outlined,
+                            color: Colors.red,
+                          ),
                           Text(
                             'Delete Account',
                             style: TextStyle(
