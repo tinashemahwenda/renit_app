@@ -39,7 +39,6 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                       Row(
                         spacing: 10,
                         children: [
-                          ShadBadge(child: Text('6 days left')),
                           InkWell(
                               onTap: () => shareJob(context),
                               child: CircleAvatar(child: Icon(Icons.share))),
@@ -62,7 +61,7 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                       children: [
                         SizedBox(height: 20),
                         Center(
-                          child: ShadBadge(child: Text('6 days left')),
+                          child: ShadBadge.outline(child: Text('6 days left')),
                         ),
                         Center(
                           child: Text(
