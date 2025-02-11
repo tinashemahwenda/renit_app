@@ -35,6 +35,7 @@ class QuickApplyJobScreen extends StatelessWidget {
                           ),
                           ShadButton(
                             child: Text('No'),
+                            onPressed: () => Navigator.pop(context),
                           ),
                         ],
                       )),
