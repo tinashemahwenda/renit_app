@@ -271,6 +271,30 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ShadButton.outline(
+                onPressed: () => showShadDialog(
+                    context: context,
+                    builder: (context) => ShadDialog(
+                          title: Text(
+                              'Do you want to leave this app to go and apply external?'),
+                          padding: EdgeInsets.all(40),
+                          actions: [
+                            ShadButton.outline(
+                              child: Text('Yes, leave app'),
+                            ),
+                            ShadButton(
+                              child: Row(
+                                spacing: 10,
+                                children: [
+                                  Icon(
+                                    Icons.bolt,
+                                    color: Colors.white,
+                                  ),
+                                  Text('Quick Apply'),
+                                ],
+                              ),
+                            ),
+                          ],
+                        )),
                 child: Row(
                   spacing: 5,
                   children: [
