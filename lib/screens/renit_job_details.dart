@@ -62,6 +62,9 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                       children: [
                         SizedBox(height: 20),
                         Center(
+                          child: ShadBadge(child: Text('6 days left')),
+                        ),
+                        Center(
                           child: Text(
                             'Graphic Designer',
                             style: ShadTheme.of(context).textTheme.h4,
