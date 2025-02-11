@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
-class QuickApply extends StatelessWidget {
-  const QuickApply({super.key});
+class QuickApplyJobScreen extends StatelessWidget {
+  const QuickApplyJobScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +14,13 @@ class QuickApply extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ShadButton(
+            ShadButton.outline(
               child: Text('Cancel'),
             ),
             ShadButton(
-              child: Text('Submit'),
+              child: Text('Submit Application'),
             ),
           ],
         ),
