@@ -2,9 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 //import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
+import 'package:share_plus/share_plus.dart';
 
-class RenitJobDetails extends StatelessWidget {
+class RenitJobDetails extends StatefulWidget {
   const RenitJobDetails({super.key});
+
+  @override
+  State<RenitJobDetails> createState() => _RenitJobDetailsState();
+}
+
+class _RenitJobDetailsState extends State<RenitJobDetails> {
+  final String textShare = 'Helloworld';
+  void shareJob(BuildContext context) {
+    Share.share(textShare);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +40,9 @@ class RenitJobDetails extends StatelessWidget {
                         spacing: 10,
                         children: [
                           ShadBadge(child: Text('6 days left')),
-                          CircleAvatar(child: Icon(Icons.share)),
+                          InkWell(
+                              onTap: () => shareJob(context),
+                              child: CircleAvatar(child: Icon(Icons.share))),
                         ],
                       )
                     ],
