@@ -28,7 +28,7 @@ class RenitJobDetails extends StatelessWidget {
                       Row(
                         spacing: 10,
                         children: [
-                          CircleAvatar(child: Icon(Icons.bookmark_add)),
+                          ShadBadge(child: Text('6 days left')),
                           CircleAvatar(child: Icon(Icons.share)),
                         ],
                       )
