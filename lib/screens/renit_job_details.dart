@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
+import 'package:renit_app/screens/quick_apply_job_screen.dart';
 //import 'package:renit_app/constants/constants.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 import 'package:share_plus/share_plus.dart';
@@ -307,6 +308,8 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                 ),
               ),
               ShadButton(
+                onPressed: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuickApply())),
                 child: Row(
                   spacing: 5,
                   children: [
