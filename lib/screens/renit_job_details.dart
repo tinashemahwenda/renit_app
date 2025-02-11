@@ -265,16 +265,37 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
             ),
           ),
         ),
-        bottomNavigationBar: ShadButton(
-          //backgroundColor: RenitColor.yellow,
+        bottomNavigationBar: BottomAppBar(
           child: Row(
-            spacing: 5,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.mail_outline_outlined,
-                color: Colors.white,
+              ShadButton.outline(
+                child: Row(
+                  spacing: 5,
+                  children: [
+                    Icon(
+                      Icons.mail_outline_outlined,
+                      color: Colors.white,
+                    ),
+                    Text('External Apply'),
+                  ],
+                ),
               ),
-              Text('Apply for this Job'),
+              ShadButton(
+                child: Row(
+                  spacing: 5,
+                  children: [
+                    Icon(
+                      Icons.bolt_rounded,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      'Quick Apply',
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ));
