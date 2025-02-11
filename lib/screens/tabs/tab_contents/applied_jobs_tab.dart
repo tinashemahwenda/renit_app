@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:renit_app/constants/constants.dart';
+
 import 'package:renit_app/widgets/renit_applied_job.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
@@ -12,16 +11,6 @@ class AppliedJobsTab extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ShadAlert(
-          icon: Icon(FontAwesomeIcons.circleExclamation),
-          title: Text(
-            'These are the jobs that you have applied. You can enable direct application',
-            style: ShadTheme.of(context).textTheme.small,
-          ),
-          decoration: ShadDecoration(
-            color: RenitColor.yellow.withAlpha(80),
-          ),
-        ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Text(
