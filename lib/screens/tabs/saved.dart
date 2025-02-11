@@ -18,7 +18,7 @@ class SavedJobsPage extends StatelessWidget {
           'My Jobs',
           style: ShadTheme.of(context).textTheme.h3,
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 40),
         ShadTabs(
           decoration: ShadDecoration(
             color: Colors.white,
