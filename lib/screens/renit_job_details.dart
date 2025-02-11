@@ -283,6 +283,11 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                               child: Text('Yes, leave app'),
                             ),
                             ShadButton(
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          QuickApplyJobScreen())),
                               child: Row(
                                 spacing: 10,
                                 children: [
@@ -308,8 +313,10 @@ class _RenitJobDetailsState extends State<RenitJobDetails> {
                 ),
               ),
               ShadButton(
-                onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => QuickApply())),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => QuickApplyJobScreen())),
                 child: Row(
                   spacing: 5,
                   children: [
