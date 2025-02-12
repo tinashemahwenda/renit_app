@@ -11,7 +11,9 @@ class GeneralSettings extends StatefulWidget {
 }
 
 class _GeneralSettingsState extends State<GeneralSettings> {
-  bool value = false;
+  bool locationBool = false;
+  bool trackingBool = false;
+  bool jobsBool = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,9 +49,9 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                         children: [
                           Text('New jobs notifications'),
                           ShadSwitch(
-                            value: true,
+                            value: jobsBool,
                             enabled: true,
-                            onChanged: (value) => true,
+                            onChanged: (v) => setState(() => jobsBool = v),
                             checkedTrackColor: RenitColor.yellow,
                           )
                         ],
@@ -59,9 +61,11 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                         children: [
                           Text('Recommended jobs notifications'),
                           ShadSwitch(
-                            value: true,
+                            value: jobsBool,
                             enabled: true,
-                            onChanged: (value) => true,
+                            onChanged: (v) => setState(
+                              () => jobsBool = v,
+                            ),
                             checkedTrackColor: RenitColor.yellow,
                           )
                         ],
@@ -71,9 +75,9 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                         children: [
                           Text('Application tracking notifications'),
                           ShadSwitch(
-                            value: true,
+                            value: trackingBool,
                             enabled: true,
-                            onChanged: (value) => true,
+                            onChanged: (v) => setState(() => trackingBool = v),
                             checkedTrackColor: RenitColor.yellow,
                           )
                         ],
@@ -102,8 +106,8 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                         children: [
                           Text('Make location visible'),
                           ShadSwitch(
-                            value: value,
-                            onChanged: (v) => setState(() => value = v),
+                            value: locationBool,
+                            onChanged: (v) => setState(() => locationBool = v),
                             checkedTrackColor: RenitColor.yellow,
                           )
                         ],
