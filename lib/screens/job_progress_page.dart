@@ -1,3 +1,4 @@
+import 'package:another_stepper/another_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
@@ -38,8 +39,14 @@ class JobProgressPage extends StatelessWidget {
                             'Graphic Designer',
                             style: ShadTheme.of(context).textTheme.h4,
                           ),
-                          Text('Renit Group, Zimbabwe'),
-                          Text('Submitted Application 5 days ago')
+                          Text(
+                            'Renit Group, Zimbabwe',
+                            style: ShadTheme.of(context).textTheme.muted,
+                          ),
+                          Text(
+                            'Submitted Application 5 days ago',
+                            style: ShadTheme.of(context).textTheme.muted,
+                          )
                         ],
                       ),
                       Spacer(),
@@ -57,10 +64,57 @@ class JobProgressPage extends StatelessWidget {
             SizedBox(height: 20),
             Container(
               width: RenitSize.width,
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
+              ),
+              child: AnotherStepper(
+                iconWidth: 30,
+                iconHeight: 30,
+                stepperList: [
+                  StepperData(
+                      iconWidget: CircleAvatar(
+                        child: Icon(
+                          Icons.get_app_sharp,
+                          color: RenitColor.yellow,
+                        ),
+                      ),
+                      title: StepperText('Received for assessment'),
+                      subtitle: StepperText(
+                          'We successfully received your application, assessment will start as soon')),
+                  StepperData(
+                      iconWidget: CircleAvatar(
+                          child: Icon(
+                        Icons.safety_check,
+                        color: RenitColor.yellow,
+                      )),
+                      title: StepperText('Screening Process',
+                          textStyle: TextStyle(
+                            fontWeight: FontWeight.normal,
+                          )),
+                      subtitle: StepperText(
+                          'We are going through your applications and resume')),
+                  StepperData(
+                      iconWidget: CircleAvatar(
+                          child: Icon(
+                        Icons.add_task_sharp,
+                        color: RenitColor.yellow,
+                      )),
+                      title: StepperText('Final Verdict'),
+                      subtitle: StepperText(
+                          'Final stage in applications review, successfull candidates will proceed to stage 4')),
+                  StepperData(
+                      iconWidget: CircleAvatar(
+                          child: Icon(
+                        Icons.call,
+                        color: RenitColor.yellow,
+                      )),
+                      title: StepperText('Calls for interviews'),
+                      subtitle: StepperText(
+                          'Involves calling selected candidates for interviews and assessment')),
+                ],
+                stepperDirection: Axis.vertical,
               ),
             )
           ],
