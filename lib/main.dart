@@ -16,7 +16,7 @@ class RenitApp extends StatelessWidget {
       RenitSize.width = MediaQuery.of(context).size.width;
       RenitSize.height = MediaQuery.of(context).size.height;
 
-      RenitColor.background = Color.fromARGB(255, 241, 241, 241);
+      RenitColor.background = Color.fromARGB(255, 244, 243, 243);
       RenitColor.white = Colors.white;
       RenitColor.yellow = Color.fromARGB(255, 255, 208, 0);
       return ShadApp(
