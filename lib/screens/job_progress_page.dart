@@ -73,7 +73,7 @@ class _JobProgressPageState extends State<JobProgressPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Enable Job Tracking Notifications'),
+                    Text('Job Tracking Notifications'),
                     ShadSwitch(
                       value: value,
                       onChanged: (v) => setState(() => value = v),
