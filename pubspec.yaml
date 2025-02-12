@@ -40,6 +40,7 @@ dependencies:
   crystal_navigation_bar: ^1.0.2
   font_awesome_flutter: ^10.8.0
   share_plus: ^10.1.4
+  easy_stepper: ^0.8.5+1
 
 dev_dependencies:
   flutter_test:
