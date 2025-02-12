@@ -114,28 +114,31 @@ class _JobProgressPageState extends State<JobProgressPage> {
                             'We successfully received your application, assessment will start as soon')),
                     StepperData(
                         iconWidget: CircleAvatar(
+                            backgroundColor: RenitColor.background,
                             child: Icon(
-                          Icons.safety_check,
-                          color: RenitColor.yellow,
-                        )),
+                              Icons.safety_check,
+                              color: Colors.black,
+                            )),
                         title: StepperText('Screening Process'),
                         subtitle: StepperText(
                             'We are going through your applications and resume')),
                     StepperData(
                         iconWidget: CircleAvatar(
+                            backgroundColor: RenitColor.background,
                             child: Icon(
-                          Icons.add_task_sharp,
-                          color: RenitColor.yellow,
-                        )),
+                              Icons.add_task_sharp,
+                              color: Colors.black,
+                            )),
                         title: StepperText('Final Verdict'),
                         subtitle: StepperText(
                             'Final stage in applications review, successfull candidates will proceed to stage 4')),
                     StepperData(
                         iconWidget: CircleAvatar(
+                            backgroundColor: RenitColor.background,
                             child: Icon(
-                          Icons.call,
-                          color: RenitColor.yellow,
-                        )),
+                              Icons.call,
+                              color: Colors.black,
+                            )),
                         title: StepperText('Calls for interviews'),
                         subtitle: StepperText(
                             'Involves calling selected candidates for interviews and assessment')),
