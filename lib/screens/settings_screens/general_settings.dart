@@ -11,15 +11,6 @@ class GeneralSettings extends StatefulWidget {
 }
 
 class _GeneralSettingsState extends State<GeneralSettings> {
-  String selectedValue = 'Any';
-  final List<String> locations = [
-    'Any',
-    'Harare',
-    'Bulawayo',
-    'Mutare',
-    'Masvingo',
-    'Other'
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,9 +101,8 @@ class _GeneralSettingsState extends State<GeneralSettings> {
                         children: [
                           Text('Make location visible'),
                           ShadSwitch(
-                            value: true,
-                            enabled: true,
-                            onChanged: (value) => true,
+                            value: v,
+                            onChanged: (v) => setState(() => value = v),
                             checkedTrackColor: RenitColor.yellow,
                           )
                         ],
