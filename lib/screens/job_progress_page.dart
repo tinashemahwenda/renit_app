@@ -25,7 +25,7 @@ class _JobProgressPageState extends State<JobProgressPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               RenitInternalNavbar(navbarTitle: 'Tracking Job Progress'),
-              SizedBox(height: 20),
+              SizedBox(height: 40),
               Container(
                 width: RenitSize.width,
                 padding: EdgeInsets.all(20),
@@ -73,7 +73,10 @@ class _JobProgressPageState extends State<JobProgressPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Job Tracking Notifications'),
+                    Text(
+                      'Job Tracking Notifications',
+                      style: ShadTheme.of(context).textTheme.small,
+                    ),
                     ShadSwitch(
                       value: value,
                       onChanged: (v) => setState(() => value = v),
@@ -115,10 +118,7 @@ class _JobProgressPageState extends State<JobProgressPage> {
                           Icons.safety_check,
                           color: RenitColor.yellow,
                         )),
-                        title: StepperText('Screening Process',
-                            textStyle: TextStyle(
-                              fontWeight: FontWeight.normal,
-                            )),
+                        title: StepperText('Screening Process'),
                         subtitle: StepperText(
                             'We are going through your applications and resume')),
                     StepperData(
