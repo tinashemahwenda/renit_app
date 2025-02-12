@@ -14,6 +14,7 @@ class JobProgressPage extends StatelessWidget {
           child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             RenitInternalNavbar(navbarTitle: 'Tracking Job Progress'),
             SizedBox(height: 20),
@@ -46,6 +47,20 @@ class JobProgressPage extends StatelessWidget {
                     ],
                   )
                 ],
+              ),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Application Progress',
+              style: ShadTheme.of(context).textTheme.table,
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: RenitSize.width,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
               ),
             )
           ],
