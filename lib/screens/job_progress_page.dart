@@ -13,7 +13,18 @@ class JobProgressPage extends StatelessWidget {
           child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         child: Column(
-          children: [RenitInternalNavbar(navbarTitle: 'Tracking Job Progress')],
+          children: [
+            RenitInternalNavbar(navbarTitle: 'Tracking Job Progress'),
+            SizedBox(height: 20),
+            Stepper(steps: [
+              Step(
+                title: Text('Step 1'),
+                content: Text('First Step'),
+                isActive: false,
+                label: Icon(Icons.home),
+              )
+            ])
+          ],
         ),
       )),
     );
