@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:renit_app/screens/job_progress_page.dart';
 
 import 'package:renit_app/widgets/renit_applied_job.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
@@ -27,11 +28,15 @@ class AppliedJobsTab extends StatelessWidget {
           ],
         ),
         SizedBox(height: 20),
-        RenitAppliedJobCard(
-            roleName: 'Graphic Designer',
-            roleCompany: 'Renit group',
-            progressStatus: 'Received for assessment(1/4)',
-            progressValue: 0.25),
+        InkWell(
+          onTap: () => Navigator.push(context,
+              MaterialPageRoute(builder: (context) => JobProgressPage())),
+          child: RenitAppliedJobCard(
+              roleName: 'Graphic Designer',
+              roleCompany: 'Renit group',
+              progressStatus: 'Received for assessment(1/4)',
+              progressValue: 0.25),
+        ),
         RenitAppliedJobCard(
             roleName: 'UI/UX Designer',
             roleCompany: 'Renit group',
