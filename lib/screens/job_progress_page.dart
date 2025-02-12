@@ -104,9 +104,13 @@ class _JobProgressPageState extends State<JobProgressPage> {
                   stepperList: [
                     StepperData(
                         iconWidget: CircleAvatar(
-                          child: Icon(
-                            Icons.get_app_sharp,
-                            color: RenitColor.yellow,
+                          child: SizedBox(
+                            width: 10,
+                            height: 10,
+                            child: CircularProgressIndicator(
+                              color: RenitColor.yellow,
+                              strokeWidth: 2,
+                            ),
                           ),
                         ),
                         title: StepperText('Received for assessment'),
