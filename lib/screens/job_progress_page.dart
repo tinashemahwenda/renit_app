@@ -20,8 +20,27 @@ class JobProgressPage extends StatelessWidget {
             EasyStepper(
               activeStep: 0,
               direction: Axis.vertical,
+              internalPadding: 10,
+              showLoadingAnimation: false,
+              alignment: Alignment.topLeft,
               steps: [
-                EasyStep(title: 'First Step'),
+                EasyStep(
+                    title: 'First Step',
+                    customStep: CircleAvatar(
+                      radius: 10,
+                    )),
+                EasyStep(
+                  title: 'Second Step',
+                  icon: Icon(Icons.home),
+                ),
+                EasyStep(
+                  title: 'Second Step',
+                  icon: Icon(Icons.home),
+                ),
+                EasyStep(
+                  title: 'Second Step',
+                  icon: Icon(Icons.home),
+                ),
               ],
             )
           ],
