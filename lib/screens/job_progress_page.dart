@@ -1,5 +1,6 @@
 import 'package:another_stepper/another_stepper.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
@@ -105,11 +106,10 @@ class _JobProgressPageState extends State<JobProgressPage> {
                     StepperData(
                         iconWidget: CircleAvatar(
                           child: SizedBox(
-                            width: 10,
-                            height: 10,
-                            child: CircularProgressIndicator(
-                              color: RenitColor.yellow,
-                              strokeWidth: 2,
+                            width: 15,
+                            height: 15,
+                            child: Lottie.asset(
+                              'assets/animations/loader.json',
                             ),
                           ),
                         ),
