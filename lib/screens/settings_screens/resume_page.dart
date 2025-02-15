@@ -237,7 +237,7 @@ class _ResumePageState extends State<ResumePage> {
                             onPressed: () {
                               showShadDialog(
                                   context: context,
-                                  builder: (context) => ShadDialog(
+                                  builder: (BuildContext context) => ShadDialog(
                                         title: Text('Your Education'),
                                         actions: [
                                           ShadButton(
