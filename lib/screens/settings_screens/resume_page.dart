@@ -103,12 +103,12 @@ class _ResumePageState extends State<ResumePage> {
                                   context: context,
                                   builder: (context) => ShadDialog(
                                         title: Text('Summary'),
-                                        child: ShadInput(),
                                         actions: [
                                           ShadButton(
                                             child: Text('Add'),
                                           )
                                         ],
+                                        child: ShadInput(),
                                       ));
                             },
                           ),
@@ -249,7 +249,11 @@ class _ResumePageState extends State<ResumePage> {
                                             ShadSwitch(
                                               value: isActive,
                                               label: Text(
-                                                  'Are you still on this role?'),
+                                                'Are you still on this role?',
+                                              ),
+                                              enabled: true,
+                                              onChanged: (v) =>
+                                                  setState(() => isActive = v),
                                             ),
                                             ShadInput(
                                               placeholder:
