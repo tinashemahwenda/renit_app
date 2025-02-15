@@ -105,6 +105,40 @@ class ResumePage extends StatelessWidget {
                           Text('Tell us about our skills'),
                           ShadButton.outline(
                             child: Text('Add skill'),
+                            onPressed: () {
+                              showShadDialog(
+                                  context: context,
+                                  builder: (context) => ShadDialog(
+                                        title: Text('Your Skills'),
+                                        description: Column(
+                                          children: [
+                                            Row(
+                                              spacing: 10,
+                                              children: [
+                                                ShadBadge.outline(
+                                                  child: Row(
+                                                    spacing: 10,
+                                                    children: [
+                                                      Text(
+                                                        'Leadership',
+                                                        style: TextStyle(
+                                                          fontSize: 14,
+                                                        ),
+                                                      ),
+                                                      Text('x'),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            ShadInput(
+                                              placeholder:
+                                                  Text('Add your skill'),
+                                            )
+                                          ],
+                                        ),
+                                      ));
+                            },
                           ),
                         ],
                       ),
