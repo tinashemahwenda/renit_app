@@ -50,6 +50,39 @@ class ResumePage extends StatelessWidget {
                         spacing: 10,
                         children: [
                           Text(
+                            'Role',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                              'Add a your job title, could feature your level and your job role you most likely looking for'),
+                          ShadButton.outline(
+                            child: Text('Add role'),
+                            onPressed: () {
+                              showShadDialog(
+                                  context: context,
+                                  builder: (context) => ShadDialog(
+                                        title: Text('Your Title'),
+                                        actions: [
+                                          ShadButton(
+                                            child: Text('Add'),
+                                          )
+                                        ],
+                                        child: ShadInput(
+                                          placeholder: Text(
+                                              'Enter your job title(Snr Developer, System Admin etc)'),
+                                        ),
+                                      ));
+                            },
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        spacing: 10,
+                        children: [
+                          Text(
                             'Personal Summary',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
