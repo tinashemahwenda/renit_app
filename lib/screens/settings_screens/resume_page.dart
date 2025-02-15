@@ -59,6 +59,19 @@ class ResumePage extends StatelessWidget {
                               'Add a personal summary to your profile as a way to introduce yourself'),
                           ShadButton.outline(
                             child: Text('Add summary'),
+                            onPressed: () {
+                              showShadDialog(
+                                  context: context,
+                                  builder: (context) => ShadDialog(
+                                        title: Text('Summary'),
+                                        child: ShadInput(),
+                                        actions: [
+                                          ShadButton(
+                                            child: Text('Add'),
+                                          )
+                                        ],
+                                      ));
+                            },
                           ),
                         ],
                       ),
