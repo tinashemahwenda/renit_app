@@ -245,6 +245,9 @@ class _ResumePageState extends State<ResumePage> {
                                           )
                                         ],
                                         child: Column(
+                                          spacing: 10,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             ShadSwitch(
                                               value: isActive,
