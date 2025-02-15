@@ -141,9 +141,14 @@ class ResumePage extends StatelessWidget {
                                             ShadInput(
                                               placeholder:
                                                   Text('Add your skill'),
-                                            )
+                                            ),
                                           ],
                                         ),
+                                        actions: [
+                                          ShadButton(
+                                            child: Text('Add'),
+                                          )
+                                        ],
                                       ));
                             },
                           ),
