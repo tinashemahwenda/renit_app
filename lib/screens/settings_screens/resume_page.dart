@@ -3,9 +3,15 @@ import 'package:renit_app/constants/constants.dart';
 import 'package:renit_app/widgets/renit_internal_navbar.dart';
 import 'package:shadcn_ui/shadcn_ui.dart';
 
-class ResumePage extends StatelessWidget {
+class ResumePage extends StatefulWidget {
   const ResumePage({super.key});
 
+  @override
+  State<ResumePage> createState() => _ResumePageState();
+}
+
+class _ResumePageState extends State<ResumePage> {
+  bool isActive = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -240,6 +246,11 @@ class ResumePage extends StatelessWidget {
                                         ],
                                         child: Column(
                                           children: [
+                                            ShadSwitch(
+                                              value: isActive,
+                                              label: Text(
+                                                  'Are you still on this role?'),
+                                            ),
                                             ShadInput(
                                               placeholder:
                                                   Text('Enter company name'),
