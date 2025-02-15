@@ -89,6 +89,34 @@ class ResumePage extends StatelessWidget {
                               'Tell your employee about your education history'),
                           ShadButton.outline(
                             child: Text('Add education'),
+                            onPressed: () {
+                              showShadDialog(
+                                  context: context,
+                                  builder: (context) => ShadDialog(
+                                        title: Text('Your Education'),
+                                        actions: [
+                                          ShadButton(
+                                            child: Text('Add'),
+                                          )
+                                        ],
+                                        child: Column(
+                                          children: [
+                                            ShadInput(
+                                              placeholder: Text(
+                                                  'Enter school/institue name'),
+                                            ),
+                                            ShadInput(
+                                              placeholder: Text(
+                                                  'Enter qualification title'),
+                                            ),
+                                            ShadInput(
+                                              placeholder: Text(
+                                                  'Year started-ended(e.g 2012-2014)'),
+                                            ),
+                                          ],
+                                        ),
+                                      ));
+                            },
                           ),
                         ],
                       ),
@@ -159,23 +187,6 @@ class ResumePage extends StatelessWidget {
                         spacing: 10,
                         children: [
                           Text(
-                            'License & Certificates',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                              'List down the certificates & licenses you have'),
-                          ShadButton.outline(
-                            child: Text('Add license or certificates'),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        spacing: 10,
-                        children: [
-                          Text(
                             'Work Experience',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -184,6 +195,34 @@ class ResumePage extends StatelessWidget {
                           Text('Tell us about your previous experience'),
                           ShadButton.outline(
                             child: Text('Add experience'),
+                            onPressed: () {
+                              showShadDialog(
+                                  context: context,
+                                  builder: (context) => ShadDialog(
+                                        title: Text('Your Education'),
+                                        actions: [
+                                          ShadButton(
+                                            child: Text('Add'),
+                                          )
+                                        ],
+                                        child: Column(
+                                          children: [
+                                            ShadInput(
+                                              placeholder:
+                                                  Text('Enter company name'),
+                                            ),
+                                            ShadInput(
+                                              placeholder:
+                                                  Text('Enter role/title'),
+                                            ),
+                                            ShadInput(
+                                              placeholder: Text(
+                                                  'Year started-ended(e.g 2012-2014)'),
+                                            ),
+                                          ],
+                                        ),
+                                      ));
+                            },
                           ),
                         ],
                       ),
