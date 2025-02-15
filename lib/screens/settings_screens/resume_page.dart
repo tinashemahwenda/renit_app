@@ -111,11 +111,13 @@ class ResumePage extends StatelessWidget {
                                   builder: (context) => ShadDialog(
                                         title: Text('Your Skills'),
                                         description: Column(
+                                          spacing: 10,
                                           children: [
                                             Row(
                                               spacing: 10,
                                               children: [
                                                 ShadBadge.outline(
+                                                  padding: EdgeInsets.all(5),
                                                   child: Row(
                                                     spacing: 10,
                                                     children: [
@@ -125,7 +127,12 @@ class ResumePage extends StatelessWidget {
                                                           fontSize: 14,
                                                         ),
                                                       ),
-                                                      Text('x'),
+                                                      Text(
+                                                        'x',
+                                                        style: TextStyle(
+                                                          color: Colors.grey,
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                 ),
