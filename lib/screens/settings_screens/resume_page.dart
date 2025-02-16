@@ -235,7 +235,20 @@ class _ResumePageState extends State<ResumePage> {
                           ShadButton.outline(
                             child: Text('Add experience'),
                             onPressed: () {
-                             showDialog
+                              showDialog(
+                                  context: context,
+                                  builder: (context) => Dialog(
+                                        child: Column(
+                                          children: [
+                                            Text('Work Experience'),
+                                            ShadSwitch(
+                                              value: isActive,
+                                              onChanged: (value) => setState(
+                                                  () => isActive = value),
+                                            )
+                                          ],
+                                        ),
+                                      ));
                             },
                           ),
                         ],
