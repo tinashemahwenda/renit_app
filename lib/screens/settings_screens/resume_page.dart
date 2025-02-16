@@ -235,44 +235,7 @@ class _ResumePageState extends State<ResumePage> {
                           ShadButton.outline(
                             child: Text('Add experience'),
                             onPressed: () {
-                              showShadDialog(
-                                  context: context,
-                                  builder: (BuildContext context) => ShadDialog(
-                                        title: Text('Your Education'),
-                                        actions: [
-                                          ShadButton(
-                                            child: Text('Add'),
-                                          )
-                                        ],
-                                        child: Column(
-                                          spacing: 10,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            ShadSwitch(
-                                              value: isActive,
-                                              label: Text(
-                                                'Are you still on this role?',
-                                              ),
-                                              enabled: true,
-                                              onChanged: (v) =>
-                                                  setState(() => isActive = v),
-                                            ),
-                                            ShadInput(
-                                              placeholder:
-                                                  Text('Enter company name'),
-                                            ),
-                                            ShadInput(
-                                              placeholder:
-                                                  Text('Enter role/title'),
-                                            ),
-                                            ShadInput(
-                                              placeholder: Text(
-                                                  'Year started-ended(e.g 2012-2014)'),
-                                            ),
-                                          ],
-                                        ),
-                                      ));
+                             showDialog
                             },
                           ),
                         ],
